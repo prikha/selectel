@@ -9,9 +9,9 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Serj Prikhodko"]
   spec.email         = ["prikha@gmail.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because RubyGems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = %q{Selectel API Wrapper}
+  spec.description   = %q{Allows you to manage your virtual resources dynamically via API}
+  spec.homepage      = "https://github.com/prikha/selectel"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
@@ -30,6 +30,8 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
+  spec.add_runtime_dependency "http", "~>3.0.0"
+  spec.add_runtime_dependency "json", "~>2.1.0"
   spec.add_development_dependency "bundler", "~> 1.16"
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec", "~> 3.0"
