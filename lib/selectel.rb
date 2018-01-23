@@ -71,7 +71,7 @@ module Selectel
       end
 
       #   PATCH /quotas/projects/{project_id}
-      def udpate_project_quotas(project_id, opts = {})
+      def update_project_quotas(project_id, opts = {})
         execute(:patch, "quotas/projects/#{project_id}", json: opts)
       end
 
