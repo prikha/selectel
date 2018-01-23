@@ -1,9 +1,9 @@
 PATH
   remote: .
   specs:
-    selectel (0.1.0)
+    selectel (0.0.2)
       http (~> 3.0.0)
-      json
+      json (~> 2.1.0)
 
 GEM
   remote: https://rubygems.org/
